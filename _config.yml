@@ -7,6 +7,22 @@ url: "http://dan.morrison.ph"
 twitter_username: dmorrison42
 github_username:  dmorrison42
 
+# Collection Settings
+
+collections:
+  patterns:
+    output: true
+  
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+
 # Build settings
 markdown: kramdown
 permalink: pretty
+theme: jekyll-theme-midnight
+
+repository: dmorrison42/dmorrison42.github.io
