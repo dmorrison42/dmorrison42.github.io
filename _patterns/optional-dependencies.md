@@ -46,7 +46,11 @@ foreach (var reference in Assembly.GetEntryAssembly().GetReferencedAssemblies())
 
 # Why so many projects?
 
-If you look at the example solution, there are three projects. The executing assembly, a library containing the interface, and a library containing the optional dependency (plugin).
+If you look at the example solution, there are three projects:
+
+- The executing assembly
+- A library containing the interface
+- A library containing the optional dependency (plugin)
 
 This is because in order for the optional dependency to be type safe, it needs to reference the interface, and in order for the optional dependency type to show up, it must be referenced by the executing assembly.
 
