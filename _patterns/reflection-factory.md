@@ -33,7 +33,14 @@ static Plugin()
 {
     foreach (var reference in Assembly.GetEntryAssembly().GetReferencedAssemblies())
     {
-        AllTypes.AddRange(Assembly.Load(reference).GetTypes());
+        try
+        {
+            AllTypes.AddRange(Assembly.Load(reference).GetTypes());
+        }
+        catch (ReflectionTypeLoadException e)
+        {
+            AllTypes.AddRange(e.Types);
+        }
     }
 
     PluginTypes = AllTypes
