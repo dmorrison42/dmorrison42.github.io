@@ -8,7 +8,7 @@ All code snippets are taken from a "real boy" [build-able solution](https://gith
 
 If something isn't working for you, make sure the solution builds.
 
-[MSDN](https://msdn.microsoft.com/en-us/library/ms972962.aspx?f=255&MSPPError=-2147217396) and [StackOverflow](https://stackoverflow.com/a/1422271/8999186) already had a pretty write-ups, but I found their explanation more confusing than satisfactory during my initial research.
+[MSDN](https://msdn.microsoft.com/en-us/library/ms972962.aspx?f=255&MSPPError=-2147217396) and [StackOverflow](https://stackoverflow.com/a/1422271/8999186) already had a pretty write-ups, but I found their explanations more confusing than satisfactory during my initial research.
 
 # What, Why?
 
