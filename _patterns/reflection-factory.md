@@ -55,17 +55,21 @@ If all the required types are in the current assembly, AllTypes can be simply `A
 # Returning the Interface
 
 ```c#
+private static Dictionary<string, Type> ResultCache = new Dictionary<string, Type>();
 public static IPlugin New()
 {
-    var defaultType = typeof(DefaultPlugin);
-    var targetType = PluginTypes
-        .FirstOrDefault(t => t != defaultType);
-    if (targetType != null)
-    {
-        return (IPlugin) Activator.CreateInstance(targetType);
+    if (!ResultCache.ContainsKey("")) {
+        var defaultType = typeof(DefaultPlugin);
+        ResultCache[""] = PluginTypes
+            .FirstOrDefault(t => t != defaultType);
     }
-    return new DefaultPlugin();
+    if (ResultCache[""] != null) {
+        return (IPlugin) Activator.CreateInstance(ResultCache[""]);
+    }
+    return null;
 }
 ```
+
+Obviously the cache in this example does *not* need to be a dictionary. However, this matches a real world use-case more closely, and was therefore better for timing benchmarks.
 
 Now you can instantiate the interface without calling the class directly, therefore allowing the correct implementation to be chosen from the arguments passed to `New()` (left as an exercise for the reader, obviously, there are no arguments in this example).
