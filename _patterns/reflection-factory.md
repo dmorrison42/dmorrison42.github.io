@@ -2,6 +2,12 @@
 title:  "Reflection Factory"
 ---
 
+# Working Example
+
+All code snippets are taken from a "real boy" [build-able solution](https://github.com/dmorrison42/net-core-optional-dependencies).
+
+If something isn't working for you, make sure the solution builds.
+
 # What, Why?
 
 Like any [factory pattern](https://en.wikipedia.org/wiki/Factory_method_pattern), this allows for a interface to be instantiated without specifying a class.
