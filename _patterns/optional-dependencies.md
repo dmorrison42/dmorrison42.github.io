@@ -22,9 +22,9 @@ With a little creativity, this can even be used along with [Impromtu Interface](
 
 ## Warning
 
-Reflection can be slow and/or dangerous.
-
-Avoid running untrusted code (such as directly from user input) or making heavy calls such as to `GetTypes` repeatedly.
+> Reflection can be slow and/or dangerous.
+>
+> Avoid running untrusted code (such as directly from user input) or making heavy calls such as to `GetTypes` repeatedly.
 
 Because assemblies aren't used until their first reference in c#, consider using something like [LoadAssembliesOnStartup.Fody](https://github.com/Fody/LoadAssembliesOnStartup). Alternatively the internet seems to suggest loading all of the assemblies in the executing folder.
 As someone who is mildly paranoid, I would recommend either specifying a path manually (like a plugins directory), or just not doing that, because if somehow an untrusted dll gets dropped into your executing directory, the system will be compromised, and you should feel bad.

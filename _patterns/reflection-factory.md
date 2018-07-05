@@ -24,9 +24,9 @@ This allows implementations to cleanly and easily be split into individual files
 
 ## Warning
 
-Reflection can be slow and/or dangerous.
-
-Avoid running untrusted code (such as directly from user input) or making heavy calls such as to `GetTypes` repeatedly.
+> Reflection can be slow and/or dangerous.
+>
+> Avoid running untrusted code (such as directly from user input) or making heavy calls such as to `GetTypes` repeatedly.
 
 As such: We're going to put this into the static constructor, caching the results as much as possible.
 
