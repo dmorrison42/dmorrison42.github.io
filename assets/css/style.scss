@@ -13,6 +13,6 @@ section .credits.right { float: right; }
 
 section #title { margin: 0; }
 
-{% if not site.show_downloads %}
+{% unless site.show_downloads %}
 section { margin-top: 0; }
-{% endif %}
+{% endunless %}
