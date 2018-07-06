@@ -6,3 +6,13 @@
 #header {
     position: absolute;
 }
+
+section .credits { font-size: 11px; font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal; color: #696969; margin-top: -10px; }
+section .credits.left { float: left; }
+section .credits.right { float: right; }
+
+section #title { margin: 0; }
+
+{% if not site.show_downloads %}
+section { margin-top: 0; }
+{% endif %}
