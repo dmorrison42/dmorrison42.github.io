@@ -12,6 +12,8 @@ github_username:  dmorrison42
 collections:
   patterns:
     output: true
+  boat_launches:
+    output: true
   
 defaults:
   -
