@@ -7,7 +7,6 @@ rating: 4
 
 ## Pros
 
-- Quiet
 - Lots of nature
     - Turtles
     - Fish
