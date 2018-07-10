@@ -8,9 +8,9 @@ rating: 4
 ## Pros
 
 - Lots of nature
-    - Turtles
-    - Fish
-    - Clams
+  - Turtles
+  - Fish
+  - Clams
 - Generally avoided by larger boats
 
 ## Cons
