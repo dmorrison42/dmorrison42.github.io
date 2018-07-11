@@ -16,11 +16,14 @@ collections:
     output: true
   
 defaults:
-  -
-    scope:
+  - scope:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
+  - scope:
+      type: "boat_launches"
+    values:
+      layout: "boat_launch"
 
 # Build settings
 markdown: kramdown
