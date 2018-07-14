@@ -1,8 +1,9 @@
 ---
 name: Morey Pond
-map: http://ct.gov/deep/lib/deep/boat_launch/morey_pond/morey.pdf
-link: http://ct.gov/deep/cwp/view.asp?a=2686&q=384130&deepNav_GID=1620
+map: 'http://ct.gov/deep/lib/deep/boat_launch/morey_pond/morey.pdf'
+link: 'http://ct.gov/deep/cwp/view.asp?a=2686&q=384130&deepNav_GID=1620'
 rating: 4
+published: true
 ---
 
 ## Pros
@@ -21,6 +22,6 @@ rating: 4
 ## Features
 
 - Bridge
-- Dam
+- Dam (on boat launch side, near the bridge)
 - Beaver Dam
 - Geocache
