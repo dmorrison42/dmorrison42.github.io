@@ -10,6 +10,10 @@ These are here primarily as a reference guide for myself, but if you find this u
 
 {% endfor %}
 
+## Tools
+
+- [RF Attenuator (Pad) Calculator](pad-calculator)
+
 ## Kayaking Boat Launches
 
 {% for post in site.boat_launches %}
