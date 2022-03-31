@@ -12,7 +12,18 @@ title:  "ProPresenter behringer WING control"
 
 ### [behringer WING](https://www.behringer.com/product.html?modelCode=P0BV2)
 
+- [MIDI Documentation](https://mediadl.musictribe.com/download/software/behringer/WING/WING_MIDI_Documentation.pdf)
+- [DAW Documentation](https://mediadl.musictribe.com/download/software/behringer/WING/WING_DAW_Documentation.pdf)
+
 ## Theory
+
+![DenverCoder9 - Wisdom of the Ancients](https://imgs.xkcd.com/comics/wisdom_of_the_ancients.png)
+
+Thanks to [self replies by /u/glbltvlr](https://www.reddit.com/r/Behringer/comments/p529tv/wing_midi_control/) there are some breadcrumbs on how to get this done:
+
+- Output standard midi notes from ProPresenter
+- Use MidiPipe to convert to correct control change and channel
+- Send the converted output to the WING
 
 ## Configuration
 
